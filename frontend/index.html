@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MKDEH · Gestión segura de tarjetas y análisis</title>
+  <meta name="description" content="Aplicación web segura para gestionar tarjetas y visualizar análisis de seguridad (Raspberry Pi) de PYMEs." />
+  <!-- Enlace a tu hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" role="banner" aria-label="Barra de navegación">
+    <div class="container nav__wrap">
+      <a class="brand" href="#" aria-label="Inicio MKDEH Secure">
+        <div class="brand__logo">MK</div>
+        <span>MKDEH Secure</span>
+      </a>
+      <nav class="nav__links" aria-label="Secciones">
+        <a href="#" aria-current="page">Inicio</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#seguridad">Seguridad</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav__cta">
+        <!-- Enlaza a tu login (simulado o SSO) -->
+        <a href="/login.html" aria-label="Entrar a la aplicación">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero__wrap">
+        <div class="hero__card" role="region" aria-label="Presentación">
+          <span class="kicker">Plataforma para PYMEs</span>
+          <h1>Gestión segura de tarjetas y análisis de red en un solo sitio</h1>
+          <p class="lead">
+            Activa o desactiva tus tarjetas de crédito y débito según la política de MKDEH
+            y consulta el estado de seguridad de tu empresa con resultados de tu Raspberry Pi.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="/login.html" aria-label="Entrar ahora">
+              ➜ Entrar ahora
+            </a>
+            <a class="btn btn--ghost" href="#caracteristicas" aria-label="Ver características">
+              ℹ️ Ver características
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero__side" aria-label="Resumen rápido">
+          <div class="stat">
+            <div class="badge">Tarjetas</div>
+            <div>
+              <strong>1 activa / 1 inactiva</strong><br>
+              Política automática: ≤ 500€ débito · ≥ 500€ crédito
+            </div>
+          </div>
+          <div class="stat">
+            <div class="badge">Seguridad</div>
+            <div>
+              <strong>Último análisis:</strong> 04/11/2025 · Riesgo <span style="color:var(--warning);font-weight:700">Medio</span>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="badge">Acceso</div>
+            <div>
+              Inicio único (SSO) y roles por empresa (pendiente de activación)
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="caracteristicas" class="features">
+      <div class="container">
+        <div class="grid" role="list" aria-label="Características principales">
+          <article class="feature" role="listitem">
+            <h3>Gestión de tarjetas</h3>
+            <p>Activa/desactiva crédito y débito. Nunca habrá dos activas a la vez.</p>
+          </article>
+          <article class="feature" role="listitem">
+            <h3>Reglas claras</h3>
+            <p>Pagos ≤ 500€ → débito · Pagos ≥ 500€ → crédito.</p>
+          </article>
+          <article class="feature" role="listitem" id="seguridad">
+            <h3>Análisis de seguridad</h3>
+            <p>Resultados desde Raspberry Pi: puertos abiertos y hallazgos destacados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer__row" id="contacto">
+      <div>© <span id="year"></span> MKDEH · Proyecto académico</div>
+      <div>
+        <a href="/privacidad.html">Privacidad</a> ·
+        <a href="/terminos.html">Términos</a> ·
+        <a href="mailto:contacto@mkdeh.local">contacto@mkdeh.local</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
