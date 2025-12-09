@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-3">Mi perfil</h1>
+
+<div class="row g-3">
+
+  <!-- Datos de cuenta -->
+  <div class="col-md-6">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title mb-3">
+          <i class="bi bi-person-circle"></i> Datos de la cuenta
+        </h5>
+
+        <p class="mb-2">
+          <span class="text-muted">Usuario:</span><br>
+          <span class="fw-semibold">
+            {{ userinfo.get('preferred_username') or userinfo.get('name') or userinfo.get('email') }}
+          </span>
+        </p>
+
+        <p class="mb-2">
+          <span class="text-muted">Email:</span><br>
+          <span class="fw-semibold">
+            {{ userinfo.get('email', '—') }}
+          </span>
+        </p>
+
+        <p class="mb-2">
+          <span class="text-muted">Roles (Keycloak):</span><br>
+          {% if roles %}
+            {{ roles|join(", ") }}
+          {% else %}
+            <span class="text-muted">Sin roles asignados</span>
+          {% endif %}
+        </p>
+
+        {% if profile %}
+          <p class="mb-2">
+            <span class="text-muted">Fecha de registro (app):</span><br>
+            {{ profile.registered_at.strftime("%Y-%m-%d %H:%M:%S") }}
+          </p>
+
+          <p class="mb-0">
+            <span class="text-muted">Último acceso:</span><br>
+            {{ profile.last_login.strftime("%Y-%m-%d %H:%M:%S") }}
+          </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Datos de empresa -->
+  <div class="col-md-6">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title mb-3">
+          <i class="bi bi-building"></i> Empresa asociada
+        </h5>
+
+        {% if company %}
+          <p class="mb-2">
+            <span class="text-muted">Nombre:</span><br>
+            <span class="fw-semibold">{{ company.name }}</span>
+          </p>
+
+          <p class="mb-2">
+            <span class="text-muted">CIF:</span><br>
+            <span class="fw-semibold">{{ company.cif }}</span>
+          </p>
+
+          <p class="mb-2">
+            <span class="text-muted">Email de contacto:</span><br>
+            {{ company.email }}
+          </p>
+
+          <p class="mb-0">
+            <span class="text-muted">Fecha de alta:</span><br>
+            {{ company.created_at.strftime("%Y-%m-%d %H:%M:%S") }}
+          </p>
+        {% else %}
+          <p class="text-muted mb-0">
+            No hay ninguna empresa asociada a este usuario.
+          </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

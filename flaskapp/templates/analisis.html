@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+{% block content %}
+
+{# Div oculto solo para pasar el ID del último análisis al JS #}
+<div id="scan-data"
+     data-current-latest="{{ current_latest or 0 }}">
+</div>
+
+<div class="page-header mb-4 d-flex justify-content-between align-items-center">
+
+  <div>
+    <h1 class="page-title">{{ title }}</h1>
+    <p class="page-subtitle">
+      <span class="text-muted">Empresa:</span>
+      <span class="fw-semibold">{{ company.name }}</span>
+      <span class="text-muted ms-2">({{ company.cif }})</span>
+    </p>
+  </div>
+
+  <div class="d-flex align-items-center gap-2">
+
+    <!-- Formulario para ejecutar un nuevo análisis -->
+    <form method="post"
+          action="{{ url_for('ejecutar_analisis', company_id=company.id) }}">
+      <div class="row g-3">
+        <div class="col-auto">
+          <input class="form-control"
+                 name="start_ip"
+                 placeholder="IP inicio (10.11.0.X)"
+                 required>
+        </div>
+        <div class="col-auto">
+          <input class="form-control"
+                 name="end_ip"
+                 placeholder="IP fin (10.11.0.X)"
+                 required>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-success">Ejecutar análisis</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Botón para detener análisis (solo cuando hay auto_refresh activo) -->
+    {% if auto_refresh %}
+    <form method="post"
+          action="{{ url_for('detener_analisis', company_id=company.id) }}">
+      <button class="btn btn-warning">
+        Detener análisis
+      </button>
+    </form>
+    {% endif %}
+
+  </div>
+
+</div>
+
+{# Mensaje de análisis completado (tras la redirección con scan_done=1) #}
+{% if request.args.get('scan_done') == '1' %}
+<div class="alert alert-success shadow-sm mb-3">
+  <i class="bi bi-check-circle-fill"></i>
+  Análisis completado correctamente. Se ha recibido el último informe de seguridad.
+</div>
+{% endif %}
+
+{# Mensaje mientras está en curso el escaneo (auto_refresh=1) #}
+{% if auto_refresh %}
+<div class="alert alert-info shadow-sm mb-3">
+  Escaneo en curso en la Raspberry…
+  Esta página se actualizará automáticamente hasta que se reciba el nuevo análisis.
+</div>
+{% endif %}
+
+{% if scans %}
+<div class="card shadow-sm">
+  <div class="card-body">
+
+    <h5 class="card-title mb-3">
+      <i class="bi bi-shield-lock"></i> Historial de análisis de seguridad
+    </h5>
+
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th style="width:70px;">ID</th>
+            <th style="width:200px;">Fecha</th>
+            <th style="width:140px;">Puertos</th>
+            <th style="width:180px;">Vulnerabilidades</th>
+            <th style="width:120px;">Riesgo</th>
+            <th style="width:140px;">Tendencia</th>
+            <th class="text-end" style="width:160px;">Acciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+        {% for scan in scans %}
+          {% set vulns = scan.vulnerabilities|length %}
+
+          {# ----- Riesgo ----- #}
+          {% if vulns == 0 %}
+            {% set risk = "Bajo" %}
+            {% set risk_class = "bg-success" %}
+          {% elif vulns <= 2 %}
+            {% set risk = "Medio" %}
+            {% set risk_class = "bg-warning text-dark" %}
+          {% else %}
+            {% set risk = "Alto" %}
+            {% set risk_class = "bg-danger" %}
+          {% endif %}
+
+          {# ----- Tendencia respecto al anterior ----- #}
+          {% if not loop.last %}
+            {% set prev = scans[loop.index] %}
+            {% set prev_v = prev.vulnerabilities|length %}
+            {% set diff = vulns - prev_v %}
+          {% endif %}
+
+          <tr>
+
+            <!-- ID -->
+            <td class="fw-semibold">{{ scan.id }}</td>
+
+            <!-- Fecha -->
+            <td>{{ scan.created_at | localtime("%d/%m/%Y %H:%M") }}</td>
+
+            <!-- Puertos -->
+            <td>
+              <span class="badge bg-secondary px-3 py-2">
+                {{ scan.open_ports|length }}
+              </span>
+            </td>
+
+            <!-- Vulnerabilidades (cuadrado rojo) -->
+            <td>
+              <span class="badge bg-danger text-white"
+                style="display:inline-block; width:38px; height:38px;
+                       line-height:34px; text-align:center; font-size:16px;
+                       border-radius:6px;">
+                {{ vulns }}
+              </span>
+            </td>
+
+            <!-- Riesgo -->
+            <td>
+              <span class="badge {{ risk_class }} px-3 py-2 fw-semibold">
+                {{ risk }}
+              </span>
+            </td>
+
+            <!-- Tendencia -->
+            <td>
+              {% if loop.last %}
+                <span class="text-muted">—</span>
+              {% else %}
+                {% if diff > 0 %}
+                  <span class="text-danger fw-bold">
+                    <i class="bi bi-arrow-up"></i> +{{ diff }}
+                  </span>
+                {% elif diff < 0 %}
+                  <span class="text-success fw-bold">
+                    <i class="bi bi-arrow-down"></i> {{ diff }}
+                  </span>
+                {% else %}
+                  <span class="text-muted fw-bold">
+                    <i class="bi bi-arrow-right"></i> 0
+                  </span>
+                {% endif %}
+              {% endif %}
+            </td>
+
+            <!-- Acciones -->
+            <td class="text-end">
+              <a href="{{ url_for('detalle_analisis',
+                                  company_id=company.id,
+                                  scan_id=scan.id) }}"
+                 class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-search"></i> Detalle
+              </a>
+            </td>
+
+          </tr>
+        {% endfor %}
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+{% else %}
+<div class="alert alert-info shadow-sm">
+  No hay análisis registrados para esta empresa.
+</div>
+{% endif %}
+
+<a href="{{ url_for('index') }}" class="btn btn-soft-secondary mt-3">
+  <i class="bi bi-arrow-left"></i> Volver al panel
+</a>
+
+{# JS externo para gestionar el auto-refresh #}
+<script src="{{ url_for('static', filename='js/analisis_auto_refresh.js') }}"></script>
+
+{% endblock %}

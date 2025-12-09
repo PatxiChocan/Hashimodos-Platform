@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            margin-bottom: 4px;
+        }
+
+        .header small {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .info-box {
+            background: #f3f3f3;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .info-box p {
+            margin: 4px 0;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        .ticket-box {
+            margin-top: 15px;
+            padding: 10px;
+            background: #eef2ff;
+            border: 1px solid #c5d0ff;
+            border-radius: 8px;
+        }
+
+        .no-ticket {
+            font-style: italic;
+            color: #777;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo">Hashimodos</div>
+    <h1>{{ title }}</h1>
+    <small>Informe individual de gasto</small>
+</div>
+
+<!-- Empresa -->
+<div class="info-box">
+    <p><strong>Empresa:</strong> {{ company.name }} ({{ company.cif }})</p>
+    <p><strong>Correo:</strong> {{ company.email }}</p>
+</div>
+
+<!-- Datos del gasto -->
+<div class="section">
+    <div class="section-title">Detalles del gasto</div>
+
+    <table>
+        <tr>
+            <th>Fecha</th>
+            <td>{{ gasto.date.strftime("%d/%m/%Y") }}</td>
+        </tr>
+        <tr>
+            <th>Descripción</th>
+            <td>{{ gasto.description }}</td>
+        </tr>
+        <tr>
+            <th>Importe</th>
+            <td>{{ "%.2f"|format(gasto.amount) }} €</td>
+        </tr>
+    </table>
+</div>
+
+<!-- Ticket -->
+<div class="section">
+    <div class="section-title">Ticket</div>
+
+    {% if gasto.ticket_filename %}
+        <div class="ticket-box">
+            <p>Se adjunta ticket asociado al gasto.</p>
+            <p><strong>Archivo:</strong> {{ gasto.ticket_filename }}</p>
+        </div>
+    {% else %}
+        <p class="no-ticket">No se ha subido ningún ticket para este gasto.</p>
+    {% endif %}
+</div>
+
+<div class="footer">
+    Informe generado automáticamente por Hashimodos – Seguridad y gestión<br>
+    Este documento forma parte del sistema de control financiero de la empresa.
+</div>
+
+</body>
+</html>

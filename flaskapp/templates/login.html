@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6 col-lg-5">
+
+    <div class="card shadow-sm mt-5">
+      <div class="card-body p-4">
+
+        <h1 class="card-title mb-3 text-center fw-semibold">
+          <i class="bi bi-shield-lock"></i> MKDEH – Portal de Tarjetas
+        </h1>
+
+        <p class="text-muted text-center">
+          Accede con tu cuenta corporativa para gestionar tarjetas,
+          registrar pagos y revisar los análisis de seguridad.
+        </p>
+
+        <div class="d-grid mt-4">
+          <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg">
+            <i class="bi bi-box-arrow-in-right"></i>
+            &nbsp; Iniciar sesión con SSO (Keycloak)
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

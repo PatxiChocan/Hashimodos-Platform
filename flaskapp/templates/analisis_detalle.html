@@ -1,0 +1,257 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="page-header mb-4 d-flex justify-content-between align-items-center">
+  <div>
+    <h1 class="page-title">{{ title }}</h1>
+    <p class="page-subtitle">
+      Empresa: <span class="fw-semibold">{{ company.name }}</span>
+      <span class="text-muted ms-2">({{ company.cif }})</span>
+    </p>
+  </div>
+
+  <!-- Botón descargar PDF -->
+  <div>
+    <a href="{{ url_for('analisis_pdf', company_id=company.id, scan_id=scan.id) }}"
+       class="btn btn-outline-primary btn-sm">
+      <i class="bi bi-file-earmark-pdf"></i> Descargar informe PDF
+    </a>
+  </div>
+</div>
+
+
+<!-- ===== TARJETAS RESUMEN ===== -->
+<div class="row g-3 mb-4">
+
+  <!-- Resumen general -->
+  <div class="col-md-4">
+    <div class="card shadow-sm h-100 border-0">
+      <div class="card-body">
+        <h5 class="card-title mb-3">
+          <i class="bi bi-activity"></i> Resumen general
+        </h5>
+
+        <p class="mb-2">
+          <span class="text-muted">Fecha del análisis:</span><br>
+          <span class="fw-semibold">{{ scan.created_at | localtime("%d/%m/%Y %H:%M") }}</span>
+        </p>
+
+        <p class="mb-2">
+          <span class="text-muted">Máquinas detectadas:</span><br>
+          <span class="fw-semibold">{{ hosts|length }}</span>
+        </p>
+
+        <p class="mb-2">
+          <span class="text-muted">Puertos abiertos:</span><br>
+          <span class="fw-semibold">{{ scan.open_ports|length }}</span>
+        </p>
+
+        <p class="mb-2">
+          <span class="text-muted">Vulnerabilidades totales:</span><br>
+          <span class="fw-semibold">{{ vulnerabilities|length }}</span>
+        </p>
+
+        <hr>
+
+        <h6 class="text-muted">Severidades detectadas</h6>
+        <div class="d-flex flex-wrap gap-2 mt-2">
+          <span class="badge bg-danger px-3 py-2">
+            Critical: {{ severity_counts.get("critical", 0) }}
+          </span>
+          <span class="badge bg-warning text-dark px-3 py-2">
+            High: {{ severity_counts.get("high", 0) }}
+          </span>
+          <span class="badge bg-info text-dark px-3 py-2">
+            Medium: {{ severity_counts.get("medium", 0) }}
+          </span>
+          <span class="badge bg-success px-3 py-2">
+            Low: {{ severity_counts.get("low", 0) }}
+          </span>
+          <span class="badge bg-secondary px-3 py-2">
+            Otras: {{ severity_counts.get("other", 0) }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hosts detectados -->
+  <div class="col-md-4">
+    <div class="card shadow-sm h-100 border-0">
+      <div class="card-body">
+        <h5 class="card-title mb-3">
+          <i class="bi bi-hdd-network"></i> Hosts detectados
+        </h5>
+
+        {% if hosts %}
+          <ul class="list-unstyled mb-0">
+            {% for h in hosts %}
+            <li class="mb-2 d-flex align-items-center">
+              <i class="bi bi-pc-display"></i>
+              <span class="fw-semibold ms-2">{{ h }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-muted mb-0">No se detectaron hosts en este análisis.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Servicios detectados -->
+  <div class="col-md-4">
+    <div class="card shadow-sm h-100 border-0">
+      <div class="card-body">
+        <h5 class="card-title mb-3">
+          <i class="bi bi-diagram-3-fill"></i> Servicios detectados
+        </h5>
+
+        {% if services %}
+          <ul class="list-unstyled mb-0">
+            {% for svc, ports in services.items() %}
+            <li class="mb-2">
+              <span class="fw-semibold">{{ svc }}</span>:
+              <span class="text-muted">{{ ports|join(", ") }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-muted mb-0">No se detectaron servicios.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- ===== PUERTOS ABIERTOS ===== -->
+<div class="card shadow-sm mb-4 border-0">
+  <div class="card-body">
+    <h5 class="card-title mb-3">
+      <i class="bi bi-ethernet"></i> Puertos abiertos
+    </h5>
+
+    {% if scan.open_ports %}
+      <div class="table-responsive">
+        <table class="table table-hover table-sm align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Host</th>
+              <th>Puerto</th>
+              <th>Servicio</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in scan.open_ports %}
+            <tr>
+              <td>{{ p["host"] }}</td>
+              <td><span class="badge bg-secondary px-2">{{ p["port"] }}</span></td>
+              <td>{{ p["service"] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% else %}
+      <p class="text-muted mb-0">No se han registrado puertos abiertos.</p>
+    {% endif %}
+  </div>
+</div>
+
+
+
+<!-- ===== VULNERABILIDADES ===== -->
+<div class="card shadow-sm mb-4 border-0">
+  <div class="card-body">
+    <h5 class="card-title mb-3">
+      <i class="bi bi-exclamation-triangle"></i> Vulnerabilidades
+    </h5>
+
+    {% if vulnerabilities %}
+      <ul class="list-unstyled mb-0">
+        {% for v in vulnerabilities %}
+          {% set sev = v["severity"]|lower %}
+
+          {# Mapeo de color por severidad (coherente con el resumen) #}
+          {% if sev == "critical" %}
+            {% set badge_class = "bg-danger" %}
+          {% elif sev == "high" %}
+            {% set badge_class = "bg-warning text-dark" %}
+          {% elif sev == "medium" %}
+            {% set badge_class = "bg-info text-dark" %}
+          {% elif sev == "low" %}
+            {% set badge_class = "bg-success" %}
+          {% else %}
+            {% set badge_class = "bg-secondary" %}
+          {% endif %}
+
+          <li class="mb-3 p-2 rounded border d-flex flex-column">
+            <div>
+              <span class="badge {{ badge_class }} px-3 me-2 text-uppercase">
+                {{ sev|upper }}
+              </span>
+              <span class="fw-semibold">
+                {{ v.get("host", "") }}{% if v.get("port") %}:{{ v.get("port") }}{% endif %}
+              </span>
+            </div>
+            <small class="text-muted mt-1">{{ v["description"] }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="text-muted mb-0">No se detectaron vulnerabilidades en este análisis.</p>
+    {% endif %}
+  </div>
+</div>
+
+
+
+<!-- ===== RECOMENDACIONES ===== -->
+<div class="card shadow-sm border-0">
+  <div class="card-body">
+    <h5 class="card-title mb-3">
+      <i class="bi bi-lightbulb"></i> Recomendaciones
+    </h5>
+
+    <ul class="mb-0">
+
+      {% if severity_counts.get("critical", 0) > 0 %}
+        <li class="mb-2 text-danger fw-semibold">
+          <i class="bi bi-exclamation-octagon-fill"></i>
+          Hay vulnerabilidades críticas. Prioriza su solución de inmediato.
+        </li>
+      {% endif %}
+
+      {% if scan.open_ports|length > 10 %}
+        <li class="mb-2">
+          <i class="bi bi-shield-fill-exclamation"></i>
+          Se detectan muchos puertos expuestos. Revisa el firewall.
+        </li>
+      {% endif %}
+
+      {% if services.get("http") %}
+        <li class="mb-2">
+          <i class="bi bi-lock"></i>
+          Se ha detectado HTTP sin cifrar. Migra el servicio a HTTPS.
+        </li>
+      {% endif %}
+
+      <li class="mb-2">
+        <i class="bi bi-arrow-repeat"></i>
+        Repite este análisis periódicamente (semanal/mensual).
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+<a href="{{ url_for('listar_analisis', company_id=company.id) }}"
+   class="btn btn-soft-secondary mt-4">
+  <i class="bi bi-arrow-left"></i> Volver al historial
+</a>
+
+{% endblock %}

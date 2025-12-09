@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title or ("Gasto #" ~ gasto.id) }}</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    body {
+      font-family: "DejaVu Sans", Arial, sans-serif;
+      font-size: 11px;
+      color: #333;
+    }
+
+    .header {
+      border-bottom: 2px solid #0d6efd;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 20px;
+      color: #0d6efd;
+    }
+
+    .header .subtitle {
+      margin-top: 4px;
+      font-size: 11px;
+      color: #555;
+    }
+
+    .section {
+      margin-bottom: 16px;
+    }
+
+    .section h2 {
+      margin: 0 0 6px 0;
+      font-size: 14px;
+      color: #0d6efd;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+    }
+
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+      font-size: 11px;
+    }
+
+    .meta-table td {
+      padding: 3px 4px;
+      vertical-align: top;
+    }
+
+    .meta-label {
+      font-weight: bold;
+      width: 160px;
+      white-space: nowrap;
+    }
+
+    .small-muted {
+      font-size: 10px;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- CABECERA -->
+<div class="header">
+  <h1>Recibo de gasto</h1>
+  <div class="subtitle">
+    Empresa: <strong>{{ company.name }}</strong><br>
+    CIF: {{ company.cif }}<br>
+    Gasto nº: {{ gasto.id }}<br>
+    Fecha del registro: {{ gasto.created_at.strftime("%d/%m/%Y %H:%M") if gasto.created_at else gasto.date.strftime("%d/%m/%Y") }}
+  </div>
+</div>
+
+<!-- 1. RESUMEN DEL GASTO -->
+<div class="section">
+  <h2>1. Resumen del gasto</h2>
+
+  <table class="meta-table">
+    <tr>
+      <td class="meta-label">Fecha del gasto:</td>
+      <td>{{ gasto.date.strftime("%d/%m/%Y") }}</td>
+    </tr>
+    <tr>
+      <td class="meta-label">Importe:</td>
+      <td><strong>{{ "%.2f"|format(gasto.amount) }} €</strong></td>
+    </tr>
+    <tr>
+      <td class="meta-label">Descripción:</td>
+      <td>{{ gasto.description }}</td>
+    </tr>
+    <tr>
+      <td class="meta-label">Usuario que registró el gasto:</td>
+      <td>
+        {% if gasto.user %}
+          {{ gasto.user.username }}
+        {% else %}
+          <span class="small-muted">No disponible</span>
+        {% endif %}
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- 2. INFORMACIÓN ADICIONAL -->
+<div class="section">
+  <h2>2. Información adicional</h2>
+  <p class="small-muted">
+    Este documento ha sido generado automáticamente desde la plataforma de gestión
+    de gastos de la empresa <strong>{{ company.name }}</strong>.
+    <br>
+    El registro de usuario asociado al gasto permite trazar quién ha introducido la operación
+    en el sistema.
+  </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+{% block content %}
+{% set is_admin = 'admin' in roles %}
+
+<div class="page-header mb-4">
+  <div>
+    <h1 class="page-title">{{ title }}</h1>
+
+    {% if company %}
+      <p class="page-subtitle">
+        <span class="text-muted">Empresa:</span>
+        <span class="fw-semibold">{{ company.name }}</span>
+        <span class="text-muted ms-2">({{ company.cif }})</span>
+      </p>
+    {% else %}
+      <p class="text-muted">No hay empresa asociada al usuario.</p>
+    {% endif %}
+  </div>
+</div>
+
+{% if company %}
+
+<!-- ===========================
+      TARJETAS SUPERIORES
+=========================== -->
+<div class="row g-4 mb-4">
+
+  <!-- Tarjeta activa -->
+  <div class="col-md-4">
+    <div class="card card-dashboard shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title d-flex align-items-center gap-2 mb-3">
+          <i class="bi bi-credit-card-2-front-fill text-primary fs-4"></i>
+          Tarjeta activa
+        </h5>
+
+        {% if active_card %}
+          <p class="mb-2">
+            <span class="text-muted">Tipo:</span>
+            {% if active_card.type.value == 'DEBIT' %}
+              <span class="badge bg-warning text-dark ms-1 px-2 py-1">Débito</span>
+            {% else %}
+              <span class="badge bg-primary ms-1 px-2 py-1">Crédito</span>
+            {% endif %}
+          </p>
+
+          <p class="mb-3">
+            <span class="text-muted">Número:</span>
+            <span class="fw-semibold ms-1">{{ active_card.number }}</span>
+          </p>
+
+          <!-- BOTÓN CORREGIDO -->
+          <a href="{{ url_for('ver_tarjetas', company_id=company.id) }}"
+             class="btn btn-soft-secondary btn-sm">
+            Gestionar tarjetas
+          </a>
+
+        {% else %}
+          <p class="text-muted mb-0">No hay ninguna tarjeta activa.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  {% if is_admin %}
+  <!-- Últimos pagos (solo admin) -->
+  <div class="col-md-4">
+    <div class="card card-dashboard shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title d-flex align-items-center gap-2 mb-3">
+          <i class="bi bi-cash-coin text-success fs-4"></i>
+          Últimos pagos
+        </h5>
+
+        {% if last_transactions %}
+          <ul class="list-unstyled mb-3">
+            {% for tx in last_transactions %}
+            <li class="mb-3 pb-2 border-bottom">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>{{ "%.2f"|format(tx.amount) }} €</strong><br>
+                  <small class="text-muted">
+                    {{ tx.description or "Sin descripción" }}
+                  </small><br>
+                  <small class="text-muted">
+                    {{ tx.created_at.strftime("%d/%m/%Y %H:%M") }}
+                    {% if tx.user %}
+                      · {{ tx.user.username }}
+                    {% endif %}
+                  </small>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-muted mb-3">No hay pagos registrados.</p>
+        {% endif %}
+
+        <a href="{{ url_for('listar_pagos', company_id=company.id) }}"
+           class="btn btn-soft-secondary btn-sm">
+          Ver historial
+        </a>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Últimos gastos -->
+  <div class="col-md-4">
+    <div class="card card-dashboard shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title d-flex align-items-center gap-2 mb-3">
+          <i class="bi bi-receipt-cutoff text-warning fs-4"></i>
+          Últimos gastos
+        </h5>
+
+        {% if last_gastos %}
+          <ul class="list-unstyled mb-3">
+            {% for g in last_gastos %}
+            <li class="mb-3 pb-2 border-bottom">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>{{ "%.2f"|format(g.amount) }} €</strong><br>
+                  <small class="text-muted">
+                    {{ g.description }}
+                  </small><br>
+                  <small class="text-muted">
+                    {{ g.date.strftime("%d/%m/%Y") }}
+                    {% if g.user %}
+                      · {{ g.user.username }}
+                    {% endif %}
+                  </small>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-muted mb-3">No hay gastos registrados.</p>
+        {% endif %}
+
+        <div class="d-flex gap-2">
+          <a href="{{ url_for('listar_gastos', company_id=company.id) }}"
+             class="btn btn-soft-secondary btn-sm">
+            Ver gastos
+          </a>
+          <a href="{{ url_for('nuevo_gasto', company_id=company.id) }}"
+             class="btn btn-primary btn-sm">
+            Nuevo gasto
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===========================
+      ANÁLISIS DE SEGURIDAD
+=========================== -->
+{% if is_admin %}
+<div class="row g-4 mb-4">
+  <div class="col-12">
+    <div class="card card-dashboard shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title d-flex align-items-center gap-2 mb-3">
+          <i class="bi bi-shield-lock-fill text-danger fs-4"></i>
+          Análisis de seguridad
+        </h5>
+
+        {% if last_scan %}
+          <p class="mb-2">
+            Último análisis:
+            <strong>{{ last_scan.created_at | localtime("%d/%m/%Y %H:%M") }}</strong>
+          </p>
+          <p class="mb-3">
+            <span class="text-muted">Puertos abiertos:</span>
+            <strong>{{ last_scan.open_ports|length }}</strong> &nbsp; · &nbsp;
+            <span class="text-muted">Vulnerabilidades:</span>
+            <strong>{{ last_scan.vulnerabilities|length }}</strong>
+          </p>
+
+          <!-- BOTÓN CORREGIDO -->
+          <a href="{{ url_for('listar_analisis', company_id=company.id) }}"
+             class="btn btn-soft-secondary btn-sm">
+            Ver análisis
+          </a>
+
+        {% else %}
+          <p class="text-muted">
+            Todavía no hay análisis registrados para esta empresa.
+          </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% else %}
+<div class="alert alert-warning shadow-sm">
+  No hay ninguna empresa asociada a tu usuario. Contacta con el administrador.
+</div>
+{% endif %}
+
+{% endblock %}
+

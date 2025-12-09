@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="page-header d-flex justify-content-between align-items-center mb-4">
+  <div>
+    <h1 class="page-title">{{ title }}</h1>
+    <p class="page-subtitle">
+      <span class="text-muted">Empresa:</span>
+      <span class="fw-semibold">{{ company.name }}</span>
+    </p>
+  </div>
+
+  <div class="d-flex gap-2">
+
+    <!-- Botón PDF (con filtros aplicados) -->
+    <a href="{{ url_for('pagos_pdf',
+                        company_id=company.id,
+                        date_from=request.args.get('date_from'),
+                        date_to=request.args.get('date_to'),
+                        amount_min=request.args.get('amount_min'),
+                        amount_max=request.args.get('amount_max'),
+                        user_name=request.args.get('user_name')) }}"
+       class="btn btn-outline-primary">
+      <i class="bi bi-file-earmark-pdf"></i> PDF filtrado
+    </a>
+
+    <!-- Nuevo pago -->
+    <a href="{{ url_for('nuevo_pago', company_id=company.id) }}"
+       class="btn btn-primary">
+      <i class="bi bi-plus-circle"></i> Nuevo pago
+    </a>
+  </div>
+</div>
+
+<!-- Filtros -->
+<div class="card shadow-sm mb-4">
+  <div class="card-body">
+    <form method="get" class="row g-3">
+
+      <div class="col-md-3">
+        <label class="form-label text-muted">Fecha desde</label>
+        <input type="date" name="date_from" class="form-control"
+               value="{{ request.args.get('date_from','') }}">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label text-muted">Fecha hasta</label>
+        <input type="date" name="date_to" class="form-control"
+               value="{{ request.args.get('date_to','') }}">
+      </div>
+
+      <div class="col-md-2">
+        <label class="form-label text-muted">Importe mín.</label>
+        <input type="number" step="0.01" name="amount_min" class="form-control"
+               value="{{ request.args.get('amount_min','') }}">
+      </div>
+
+      <div class="col-md-2">
+        <label class="form-label text-muted">Importe máx.</label>
+        <input type="number" step="0.01" name="amount_max" class="form-control"
+               value="{{ request.args.get('amount_max','') }}">
+      </div>
+
+      <!-- NUEVO: filtro por usuario -->
+      <div class="col-md-2">
+        <label class="form-label text-muted">Usuario</label>
+        <input type="text"
+               name="user_name"
+               class="form-control"
+               placeholder="Nombre de usuario"
+               value="{{ request.args.get('user_name','') }}">
+      </div>
+
+      <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-soft-secondary w-100">
+          <i class="bi bi-funnel"></i> Filtrar
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+{% if transacciones %}
+  <!-- Tabla de pagos -->
+  <div class="card table-card shadow-sm">
+    <div class="card-body p-0">
+
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-dark">
+            <tr>
+              <th style="width: 160px;">Fecha</th>
+              <th style="width: 180px;">Tarjeta</th>
+              <th>Descripción</th>
+              <th style="width: 160px;">Usuario</th>
+              <th style="width: 120px;">Importe (€)</th>
+              <th class="text-end" style="width: 80px;">PDF</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {% for t in transacciones %}
+            <tr>
+              <td>{{ t.created_at | localtime("%d/%m/%Y %H:%M") }}</td>
+
+              <!-- Tarjeta -->
+              <td>
+                {% if t.card %}
+                  {% if t.card.type.value == 'DEBIT' %}
+                    <span class="badge bg-warning text-dark me-1">Débito</span>
+                  {% else %}
+                    <span class="badge bg-primary me-1">Crédito</span>
+                  {% endif %}
+                  <span class="text-monospace">{{ t.card.number }}</span>
+                {% else %}
+                  <span class="text-muted">—</span>
+                {% endif %}
+              </td>
+
+              <!-- Descripción -->
+              <td>{{ t.description or "—" }}</td>
+
+              <!-- Usuario -->
+              <td>
+                {% if t.user %}
+                  {{ t.user.username }}
+                {% else %}
+                  <span class="text-muted">—</span>
+                {% endif %}
+              </td>
+
+              <!-- Importe -->
+              <td class="fw-semibold text-dark">
+                {{ "%.2f"|format(t.amount) }}
+              </td>
+
+              <!-- PDF individual -->
+              <td class="text-end">
+                <a href="{{ url_for('pago_pdf', company_id=company.id, tx_id=t.id) }}"
+                   class="btn btn-outline-primary btn-sm">
+                  <i class="bi bi-file-earmark-pdf"></i>
+                </a>
+              </td>
+
+            </tr>
+            {% endfor %}
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-secondary mt-3 shadow-sm">
+    <strong>Total de pagos filtrados:</strong> {{ "%.2f"|format(total) }} €
+  </div>
+
+{% else %}
+  <div class="alert alert-info mt-3 shadow-sm text-center py-4">
+    <i class="bi bi-info-circle-fill fs-4"></i><br>
+    No hay pagos registrados o no coinciden con los filtros.
+  </div>
+{% endif %}
+
+<a href="{{ url_for('index') }}" class="btn btn-soft-secondary mt-3">
+  <i class="bi bi-arrow-left"></i> Volver al panel
+</a>
+
+{% endblock %}
+
