@@ -1,0 +1,214 @@
+/* ---------------------------------------------------------
+   ESTILOS PROFESIONALES - Hashimodos Platform (Tema Verde Oscuro)
+   --------------------------------------------------------- */
+
+/* Tipografía limpia */
+body {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.25s, color 0.25s;
+}
+
+/* ---------------------------------------------------------
+   VARIABLES DE TEMA (CLARO)
+--------------------------------------------------------- */
+:root {
+    --primary: #0B5C2C;        /* Verde oscuro MKDEH */
+    --primary-soft: #e6f4ec;   /* Verde suave para botones y fondos */
+    --bg-color: #f5f6fa;
+    --bg-card: #ffffff;
+    --text-color: #222;
+    --border-color: #d9dfe7;
+}
+
+/* ---------------------------------------------------------
+   NAVBAR
+--------------------------------------------------------- */
+.main-navbar {
+    background: var(--primary);
+    padding: 0.75rem 1rem;
+}
+
+.main-navbar .navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.main-navbar .nav-link {
+    color: #e8e8e8 !important;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.main-navbar .nav-link.active,
+.main-navbar .nav-link:hover {
+    color: #ffffff !important;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+}
+
+/* ---------------------------------------------------------
+   CARDS
+--------------------------------------------------------- */
+.card {
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+    border-radius: 0.9rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+/* page header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* ---------------------------------------------------------
+   TABLAS
+--------------------------------------------------------- */
+table thead {
+    font-size: 0.95rem;
+}
+
+table tbody tr:hover {
+    background-color: rgba(11, 92, 44, 0.08); /* verde suave */
+}
+
+/* ---------------------------------------------------------
+   BOTONES
+--------------------------------------------------------- */
+.btn-primary,
+.btn.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: #094c25 !important;
+    border-color: #094c25 !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: #fff !important;
+}
+
+.btn-soft-secondary {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: none;
+}
+
+.btn-soft-secondary:hover {
+    background-color: #d6ece1;
+}
+
+/* ---------------------------------------------------------
+   ALERTAS
+--------------------------------------------------------- */
+.alert {
+    border-radius: 0.7rem;
+}
+
+/* ---------------------------------------------------------
+   BADGES
+--------------------------------------------------------- */
+.badge-pill {
+    border-radius: 50px;
+}
+
+/* ---------------------------------------------------------
+   ANIMACIONES
+--------------------------------------------------------- */
+.card, .table, .btn, .alert {
+    transition: all 0.2s ease-in-out;
+}
+/* ---------------------------------------------------------
+   LINKS / ENLACES
+--------------------------------------------------------- */
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #094c25;
+    text-decoration: none !important;
+}
+
+/* En la navbar mantenemos blanco */
+.main-navbar .nav-link,
+.main-navbar .navbar-brand {
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------
+   SPINNERS (Bootstrap .spinner-border / .spinner-grow)
+--------------------------------------------------------- */
+.spinner-border,
+.spinner-grow {
+    color: var(--primary) !important;
+}
+
+.spinner-border {
+    border-color: var(--primary) !important;
+    border-right-color: transparent !important;
+}
+
+/* ---------------------------------------------------------
+   SCROLLBAR (Webkit: Chrome, Edge, etc.)
+--------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(11, 92, 44, 0.5);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(11, 92, 44, 0.8);
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(11, 92, 44, 0.7) transparent;
+}
+
+/* Layout para que el footer se coloque abajo */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-shell {
+  flex: 1;
+}
+
