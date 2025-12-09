@@ -1,0 +1,3748 @@
+{
+  "scan_id": "scan-50b9ea61-90a6-43be-9994-38bfa15b7b69",
+  "generated_at": "2025-11-28T11:22:55Z",
+  "hosts": [
+    {
+      "ip": "10.11.0.2",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.3",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.4",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.5",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.6",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.7",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.8",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.9",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.11",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.12",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.13",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.14",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "2049",
+          "service": "nfs_acl",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3128",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.15",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "389",
+          "service": "ldap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "636",
+          "service": "ldap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "8080",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "8081",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.16",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.21",
+      "hostname": "",
+      "services": [
+        {
+          "port": "21",
+          "service": "ftp",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-54309",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": " CrushFTP Unprotected Alternate Channel Vulnerability",
+              "published": "2025-07-22",
+              "updated": "2025-07-22"
+            },
+            {
+              "cve": "CVE-2025-47812",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Wing FTP Server Improper Neutralization of Null Byte or NUL Character Vulnerability",
+              "published": "2025-07-14",
+              "updated": "2025-07-14"
+            },
+            {
+              "cve": "CVE-2025-31161",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "CrushFTP Authentication Bypass Vulnerability",
+              "published": "2025-04-07",
+              "updated": "2025-04-07"
+            }
+          ]
+        },
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.22",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "8080",
+          "service": "rtsp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "8081",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.23",
+      "hostname": "",
+      "services": [
+        {
+          "port": "53",
+          "service": "domain",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "2222",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "8443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.24",
+      "hostname": "",
+      "services": [
+        {
+          "port": "2222",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "5432",
+          "service": "postgresql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.25",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "4000",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.36",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "636",
+          "service": "ldapssl",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.37",
+      "hostname": "",
+      "services": [
+        {
+          "port": "21",
+          "service": "ftp",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-54309",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": " CrushFTP Unprotected Alternate Channel Vulnerability",
+              "published": "2025-07-22",
+              "updated": "2025-07-22"
+            },
+            {
+              "cve": "CVE-2025-47812",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Wing FTP Server Improper Neutralization of Null Byte or NUL Character Vulnerability",
+              "published": "2025-07-14",
+              "updated": "2025-07-14"
+            },
+            {
+              "cve": "CVE-2025-31161",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "CrushFTP Authentication Bypass Vulnerability",
+              "published": "2025-04-07",
+              "updated": "2025-04-07"
+            }
+          ]
+        },
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "25",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "53",
+          "service": "domain",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "110",
+          "service": "pop3",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "143",
+          "service": "imap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "993",
+          "service": "imap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "995",
+          "service": "pop3",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.38",
+      "hostname": "",
+      "services": [
+        {
+          "port": "21",
+          "service": "ftp",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-54309",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": " CrushFTP Unprotected Alternate Channel Vulnerability",
+              "published": "2025-07-22",
+              "updated": "2025-07-22"
+            },
+            {
+              "cve": "CVE-2025-47812",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Wing FTP Server Improper Neutralization of Null Byte or NUL Character Vulnerability",
+              "published": "2025-07-14",
+              "updated": "2025-07-14"
+            },
+            {
+              "cve": "CVE-2025-31161",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "CrushFTP Authentication Bypass Vulnerability",
+              "published": "2025-04-07",
+              "updated": "2025-04-07"
+            }
+          ]
+        },
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.40",
+      "hostname": "",
+      "services": [
+        {
+          "port": "21",
+          "service": "ftp",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-54309",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": " CrushFTP Unprotected Alternate Channel Vulnerability",
+              "published": "2025-07-22",
+              "updated": "2025-07-22"
+            },
+            {
+              "cve": "CVE-2025-47812",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Wing FTP Server Improper Neutralization of Null Byte or NUL Character Vulnerability",
+              "published": "2025-07-14",
+              "updated": "2025-07-14"
+            },
+            {
+              "cve": "CVE-2025-31161",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "CrushFTP Authentication Bypass Vulnerability",
+              "published": "2025-04-07",
+              "updated": "2025-04-07"
+            }
+          ]
+        },
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.41",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "25",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "53",
+          "service": "domain",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "110",
+          "service": "pop3",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "143",
+          "service": "imap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "389",
+          "service": "ldap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "587",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "993",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "995",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.42",
+      "hostname": "",
+      "services": [
+        {
+          "port": "21",
+          "service": "ftp",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-54309",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": " CrushFTP Unprotected Alternate Channel Vulnerability",
+              "published": "2025-07-22",
+              "updated": "2025-07-22"
+            },
+            {
+              "cve": "CVE-2025-47812",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Wing FTP Server Improper Neutralization of Null Byte or NUL Character Vulnerability",
+              "published": "2025-07-14",
+              "updated": "2025-07-14"
+            },
+            {
+              "cve": "CVE-2025-31161",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "CrushFTP Authentication Bypass Vulnerability",
+              "published": "2025-04-07",
+              "updated": "2025-04-07"
+            }
+          ]
+        },
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "53",
+          "service": "domain",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.43",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "25",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "53",
+          "service": "domain",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "143",
+          "service": "imap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "389",
+          "service": "ldap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "465",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "587",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "993",
+          "service": "imap",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.44",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "25",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "143",
+          "service": "imap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "587",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "993",
+          "service": "imap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.46",
+      "hostname": "",
+      "services": [
+        {
+          "port": "21",
+          "service": "ftp",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-54309",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": " CrushFTP Unprotected Alternate Channel Vulnerability",
+              "published": "2025-07-22",
+              "updated": "2025-07-22"
+            },
+            {
+              "cve": "CVE-2025-47812",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Wing FTP Server Improper Neutralization of Null Byte or NUL Character Vulnerability",
+              "published": "2025-07-14",
+              "updated": "2025-07-14"
+            },
+            {
+              "cve": "CVE-2025-31161",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "CrushFTP Authentication Bypass Vulnerability",
+              "published": "2025-04-07",
+              "updated": "2025-04-07"
+            }
+          ]
+        },
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "25",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "53",
+          "service": "domain",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "88",
+          "service": "kerberos-sec",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "110",
+          "service": "pop3",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "143",
+          "service": "imap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "389",
+          "service": "ldap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "464",
+          "service": "kerberos-sec",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "587",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "636",
+          "service": "ldap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "749",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "993",
+          "service": "imaps",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "995",
+          "service": "pop3s",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.47",
+      "hostname": "",
+      "services": [
+        {
+          "port": "21",
+          "service": "ftp",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-54309",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": " CrushFTP Unprotected Alternate Channel Vulnerability",
+              "published": "2025-07-22",
+              "updated": "2025-07-22"
+            },
+            {
+              "cve": "CVE-2025-47812",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Wing FTP Server Improper Neutralization of Null Byte or NUL Character Vulnerability",
+              "published": "2025-07-14",
+              "updated": "2025-07-14"
+            },
+            {
+              "cve": "CVE-2025-31161",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "CrushFTP Authentication Bypass Vulnerability",
+              "published": "2025-04-07",
+              "updated": "2025-04-07"
+            }
+          ]
+        },
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "389",
+          "service": "ldap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "9200",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.49",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "636",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3389",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.56",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "53",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "80",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.60",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.62",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.127",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "5500",
+          "service": "hotline",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.128",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.130",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.132",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.135",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.143",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.147",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "902",
+          "service": "vmware-auth",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "912",
+          "service": "vmware-auth",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "5357",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.148",
+      "hostname": "",
+      "services": [
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "2222",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "5900",
+          "service": "vnc",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.149",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.151",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.152",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "7070",
+          "service": "realserver",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.160",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "5357",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "5500",
+          "service": "hotline",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.161",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "25",
+          "service": "smtp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "53",
+          "service": "domain",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.162",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.163",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "6000",
+          "service": "X11",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.164",
+      "hostname": "",
+      "services": [
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "2222",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "5900",
+          "service": "vnc",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.168",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.170",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.172",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.173",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.179",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.171",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        },
+        {
+          "port": "111",
+          "service": "rpcbind",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "5900",
+          "service": "vnc",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.64",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.65",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.77",
+      "hostname": "",
+      "services": [
+        {
+          "port": "22",
+          "service": "ssh",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-32433",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability",
+              "published": "2025-06-09",
+              "updated": "2025-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.80",
+      "hostname": "",
+      "services": [
+        {
+          "port": "443",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.81",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "902",
+          "service": "vmware-auth",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "912",
+          "service": "vmware-auth",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "2869",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.82",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "902",
+          "service": "vmware-auth",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "912",
+          "service": "vmware-auth",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.83",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "2869",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "5357",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.86",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "135",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "5357",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "5432",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.88",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "5357",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.89",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "902",
+          "service": "vmware-auth",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "912",
+          "service": "vmware-auth",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "2869",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "5357",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "7070",
+          "service": "realserver",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.90",
+      "hostname": "",
+      "services": [
+        {
+          "port": "9101",
+          "service": "jetdirect",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.91",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.93",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.94",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "135",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.96",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "7070",
+          "service": "realserver",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "8080",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.97",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.98",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.99",
+      "hostname": "",
+      "services": [
+        {
+          "port": "6000",
+          "service": "X11",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.100",
+      "hostname": "",
+      "services": [
+        {
+          "port": "2869",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "5357",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "7070",
+          "service": "realserver",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.102",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "7070",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.103",
+      "hostname": "",
+      "services": [
+        {
+          "port": "389",
+          "service": "ldap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "636",
+          "service": "ldap",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "8080",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "8081",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "8443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.104",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.105",
+      "hostname": "",
+      "services": [
+        {
+          "port": "8500",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.107",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "903",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "6000",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.108",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.110",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "https",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "5432",
+          "service": "postgresql",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "7070",
+          "service": "realserver",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.111",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "2179",
+          "service": "vmrdp",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "6000",
+          "service": "X11",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "7070",
+          "service": "realserver",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.112",
+      "hostname": "",
+      "services": [
+        {
+          "port": "445",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.113",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.114",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.115",
+      "hostname": "",
+      "services": [
+        {
+          "port": "6000",
+          "service": "X11",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.117",
+      "hostname": "",
+      "services": [
+        {
+          "port": "3306",
+          "service": "mysql",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "6000",
+          "service": "X11",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.118",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "6000",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.120",
+      "hostname": "",
+      "services": [
+        {
+          "port": "6000",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.122",
+      "hostname": "",
+      "services": [
+        {
+          "port": "5432",
+          "service": "postgresql",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "9080",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "9081",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.123",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "135",
+          "service": "msrpc",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "netbios-ssn",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "2869",
+          "service": "http",
+          "state": "unknown",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38475",
+              "cvss": 10.0,
+              "severity": "critical",
+              "description": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+              "published": "2025-05-01",
+              "updated": "2025-05-01"
+            }
+          ]
+        },
+        {
+          "port": "7070",
+          "service": "realserver",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.124",
+      "hostname": "",
+      "services": [
+        {
+          "port": "80",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "443",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "3306",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    },
+    {
+      "ip": "10.11.0.126",
+      "hostname": "",
+      "services": [
+        {
+          "port": "135",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "139",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "445",
+          "service": "microsoft-ds",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "902",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "912",
+          "service": "tcpwrapped",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "6000",
+          "service": "X11",
+          "state": "unknown",
+          "vulnerabilities": []
+        },
+        {
+          "port": "8090",
+          "service": "opsmessaging",
+          "state": "unknown",
+          "vulnerabilities": []
+        }
+      ]
+    }
+  ]
+}
