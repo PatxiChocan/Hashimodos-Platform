@@ -290,8 +290,12 @@ keycloak = oauth.register(
     client_id=CLIENT_ID,
     client_secret=CLIENT_SECRET,
     server_metadata_url=f"{ISSUER}/.well-known/openid-configuration",
-    client_kwargs={"scope": "openid profile email"},
+    client_kwargs={
+        "scope": "openid profile email",
+        "verify": False,
+    },
 )
+
 
 
 # ---------------------------------------------------------
