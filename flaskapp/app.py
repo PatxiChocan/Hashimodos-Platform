@@ -275,7 +275,7 @@ def localtime(value, fmt="%d/%m/%Y %H:%M:%S"):
 # ---------------------------------------------------------
 # CONFIGURACIÓN KEYCLOAK
 # ---------------------------------------------------------
-KEYCLOAK_BASE_URL = "http://10.11.0.22:8080"
+KEYCLOAK_BASE_URL = "https://10.11.0.22:8443"
 REALM = "Hashimodos"
 
 CLIENT_ID = "flaskapp"
